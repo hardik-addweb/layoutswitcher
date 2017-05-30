@@ -1,11 +1,12 @@
 <ion-view view-title="Chats">
   <ion-nav-buttons side="right">
-    <button class="button icon ion-navicon" ></button>
-    <button class="button icon ion-grid" ></button>
-    
+     <button class="button icon ion-navicon" ng-click="grid_view()"></button>
+    <!-- <button class="button icon ion-navicon" ng-click="grid_view1()" ng-show="flag1"></button> -->
+    <!-- <button class="button icon ion-grid" ng-click="grid_view2()" ng-show="flag2"></button> -->
   </ion-nav-buttons>
+
   <ion-content>
-    <div class="list">
+    <div class="{{ layout }}">
       <a class="item item-thumbnail-left" ng-repeat="chat in chats" href="#/tab/chats/{{chat.id}}">
         <img ng-src="{{chat.face}}">
         <h2>{{chat.name}}</h2>
