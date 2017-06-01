@@ -6619,7 +6619,7 @@ button.item.item-button-right {
       position: relative;
       top: 0;
       left: 0;
-      max-height: unset;
+      max-height: 100%;
       max-width: 100%; }
 
 /**
