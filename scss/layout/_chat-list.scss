@@ -1,0 +1,90 @@
+/*
+ * - Chat list page SCSS
+ */
+
+/**
+* Grid view
+*/
+.grid {
+  display: inline-block;
+  width: 100%;
+  .item {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    > img {
+      position: relative;
+      top: 0;
+      left: 0;
+      max-height: unset;
+      max-width: 100%;
+    }
+  }
+}
+
+.chat-list-wrap {
+  .item {
+    margin: 0;
+    padding: 30px 15px 30px 125px;
+    background-color: $dark-blue;
+    color: $light;
+    img {
+      top: 25px;
+      max-height: 100px;
+      max-width: 100px;
+      height: 100px;
+      width: 100px;
+      @include border-radius(100%);
+      border: 5px solid $light;
+    }
+    h2,
+    p {
+      margin-bottom: 10px;
+      color: $light;
+    }
+    h2 {
+      font-size: 26px;
+      font-weight: normal;
+    }
+    p {
+      font-size: 20px;
+    }
+    .button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      color: $light;
+      font-size: 20px;
+      opacity: 1;
+      @include border-radius(30px);
+      @include background-horizontal($light-blue, $light-green, $light-blue);
+    }
+  }
+  &.grid {
+    .item {
+      padding: 30px 15px;
+      text-align: center;
+      img {
+        top: 0;
+      }
+    }
+  }
+}
+ion-tabs {
+  .tab-nav {
+    height: 60px;
+    background-color: #EFEFEF;
+    .tab-item,
+    a {
+      color: $dark-blue;
+      &.tab-item-active,
+      &.activated {
+        color: $dark-blue;
+      }
+      .tab-title {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+

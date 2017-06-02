@@ -1,0 +1,29 @@
+/**
+ * @file
+ * SCSS file for Mixins.
+ *
+ * All mixins used in SCSS are defined in this file.
+ */
+
+
+@mixin calc($property, $expression) {
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}:    -moz-calc(#{$expression});
+  #{$property}:         calc(#{$expression});
+}
+
+/**
+ * Gradient
+ *
+ * background-vertical = Top to Bottom
+ * background-horizontal = Left to Right
+ * background-diagonal-tl-br = Top-Left to Bottom-Right
+ * background-diagonal-bl-tr = Bottom-Left to Top-Right
+ */
+@mixin background-horizontal($left, $middle, $right) {
+  background: $left;
+  background: -webkit-linear-gradient(left, $left 0%, $middle 50%, $right 100%);
+  background:    -moz-linear-gradient(left, $left 0%, $middle 50%, $right 100%);
+  background:         linear-gradient(to right, $left 0%, $middle 50%, $right 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$left', endColorstr='$right',GradientType=0);
+}

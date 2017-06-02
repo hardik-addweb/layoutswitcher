@@ -5,8 +5,8 @@
     <!-- <button class="button icon ion-grid" ng-click="grid_view2()" ng-show="flag2"></button> -->
   </ion-nav-buttons>
 
-  <ion-content>
-    <div class="{{layout}}" >
+  <ion-content class="tab-chat-page">
+    <div class="{{layout}} chat-list-wrap">
       <a class="item item-thumbnail-left" ng-repeat="chat in chats" href="#/tab/chats/{{chat.id}}">
         <img ng-src="{{chat.face}}">
         <h2>{{chat.name}}</h2>

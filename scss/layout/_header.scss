@@ -1,0 +1,31 @@
+/*
+ * Header Design SCSS
+ */
+
+.bar.bar-stable {
+  height: 60px;
+  @include background-horizontal($light-blue, $light-green, $light-blue);
+  .title {
+    height: 60px;
+    line-height: 60px;
+    color: $light;
+    font-size: 30px;
+  }
+  .buttons-right {
+    .button {
+      border: none;
+      background-color: transparent;
+      &::before,
+      &::after {
+        color: $light;
+        font-size: 50px;
+      }
+    }
+  }
+}
+.has-header {
+  top: 60px;
+}
+.has-tabs {
+  bottom: 60px;
+}

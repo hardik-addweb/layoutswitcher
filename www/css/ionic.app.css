@@ -6606,23 +6606,6 @@ button.item.item-button-right {
       margin: 0 auto; }
 
 /**
- * Grid view
- */
-.grid {
-  display: inline-block;
-  width: 100%; }
-  .grid .item {
-    float: left;
-    width: 50%;
-    padding: 10px; }
-    .grid .item > img {
-      position: relative;
-      top: 0;
-      left: 0;
-      max-height: 100%;
-      max-width: 100%; }
-
-/**
  * Lists
  * --------------------------------------------------
  */
@@ -9831,3 +9814,130 @@ a.button {
   opacity: 0;
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
+
+/**
+ * @file
+ * SCSS file for Mixins.
+ *
+ * All mixins used in SCSS are defined in this file.
+ */
+/**
+ * Gradient
+ *
+ * background-vertical = Top to Bottom
+ * background-horizontal = Left to Right
+ * background-diagonal-tl-br = Top-Left to Bottom-Right
+ * background-diagonal-bl-tr = Bottom-Left to Top-Right
+ */
+/**
+ * @file
+ * SCSS file for variables.
+ *
+ * All variables used in SCSS are defined in this file.
+ */
+/* Colors */
+/*
+ * Header Design SCSS
+ */
+.bar.bar-stable {
+  height: 60px;
+  background: #4081BF;
+  background: -webkit-linear-gradient(left, #4081BF 0%, #40A6BF 50%, #4081BF 100%);
+  background: -moz-linear-gradient(left, #4081BF 0%, #40A6BF 50%, #4081BF 100%);
+  background: linear-gradient(to right, #4081BF 0%, #40A6BF 50%, #4081BF 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$left', endColorstr='$right',GradientType=0); }
+  .bar.bar-stable .title {
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    font-size: 30px; }
+  .bar.bar-stable .buttons-right .button {
+    border: none;
+    background-color: transparent; }
+    .bar.bar-stable .buttons-right .button::before, .bar.bar-stable .buttons-right .button::after {
+      color: #fff;
+      font-size: 50px; }
+
+.has-header {
+  top: 60px; }
+
+.has-tabs {
+  bottom: 60px; }
+
+/*
+ * - Chat list page SCSS
+ */
+/**
+* Grid view
+*/
+.grid {
+  display: inline-block;
+  width: 100%; }
+  .grid .item {
+    float: left;
+    width: 50%;
+    padding: 10px; }
+    .grid .item > img {
+      position: relative;
+      top: 0;
+      left: 0;
+      max-height: unset;
+      max-width: 100%; }
+
+.chat-list-wrap .item {
+  margin: 0;
+  padding: 30px 15px 30px 125px;
+  background-color: #1B3255;
+  color: #fff; }
+  .chat-list-wrap .item img {
+    top: 25px;
+    max-height: 100px;
+    max-width: 100px;
+    height: 100px;
+    width: 100px;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    border: 5px solid #fff; }
+  .chat-list-wrap .item h2,
+  .chat-list-wrap .item p {
+    margin-bottom: 10px;
+    color: #fff; }
+  .chat-list-wrap .item h2 {
+    font-size: 26px;
+    font-weight: normal; }
+  .chat-list-wrap .item p {
+    font-size: 20px; }
+  .chat-list-wrap .item .button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 20px;
+    opacity: 1;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    background: #4081BF;
+    background: -webkit-linear-gradient(left, #4081BF 0%, #40A6BF 50%, #4081BF 100%);
+    background: -moz-linear-gradient(left, #4081BF 0%, #40A6BF 50%, #4081BF 100%);
+    background: linear-gradient(to right, #4081BF 0%, #40A6BF 50%, #4081BF 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$left', endColorstr='$right',GradientType=0); }
+
+.chat-list-wrap.grid .item {
+  padding: 30px 15px;
+  text-align: center; }
+  .chat-list-wrap.grid .item img {
+    top: 0; }
+
+ion-tabs .tab-nav {
+  height: 60px;
+  background-color: #EFEFEF; }
+  ion-tabs .tab-nav .tab-item,
+  ion-tabs .tab-nav a {
+    color: #1B3255; }
+    ion-tabs .tab-nav .tab-item.tab-item-active, ion-tabs .tab-nav .tab-item.activated,
+    ion-tabs .tab-nav a.tab-item-active,
+    ion-tabs .tab-nav a.activated {
+      color: #1B3255; }
+    ion-tabs .tab-nav .tab-item .tab-title,
+    ion-tabs .tab-nav a .tab-title {
+      font-size: 16px;
+      line-height: 20px; }
