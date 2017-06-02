@@ -1,6 +1,13 @@
 <ion-view view-title="Products">
   <ion-nav-buttons side="right">
-     <button class="button icon ion-navicon" on-icon="button icon ion-navicon" off-icon="button icon ion-grid" ng-click="grid_view()" icon-switcher ></button>
+    <div class="list-grid-toggle">
+      <button class="button icon ion-navicon list-icon" ng-click="grid_view()" icon-switcher on-icon="list-icon" off-icon="grid-icon">
+        <div class="icon-bar"></div>
+        <div class="icon-bar"></div>
+        <div class="icon-bar"></div>
+      </button>
+    </div>
+     <!-- <button class="button icon ion-navicon" on-icon="button icon ion-navicon" off-icon="button icon ion-grid" ng-click="grid_view()" icon-switcher ></button> -->
     <!-- <button class="button icon ion-navicon" ng-click="grid_view1()" ng-show="flag1"></button> -->
     <!-- <button class="button icon ion-grid" ng-click="grid_view2()" ng-show="flag2"></button> -->
   </ion-nav-buttons>
