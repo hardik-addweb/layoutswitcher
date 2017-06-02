@@ -12,10 +12,9 @@ angular.module('starter.controllers', [])
   $scope.grid_view = function() {
     if($scope.layout == 'grid'){
       $scope.layout = "list";
-    }else {
+    } else {
       $scope.layout = "grid";
     }
-
   };
 
   $scope.chats = Chats.all();
@@ -27,39 +26,25 @@ angular.module('starter.controllers', [])
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
   $scope.chat = Chats.get($stateParams.chatId);
 })
-.directive('iconSwitcher', function() {
 
+.directive('iconSwitcher', function() {
   return {
     restrict : 'A',
-
     link : function(scope, elem, attrs) {
-
       var currentState = true;
-
       elem.on('click', function() {
         console.log('You clicked me!');
-
         if(currentState === true) {
           console.log('It is on!');
           angular.element(elem).removeClass(attrs.onIcon);
           angular.element(elem).addClass(attrs.offIcon);
-
-          // angular.element(elem).removeClass(attrs.onLayout);
-          // angular.element(elem).addClass(attrs.offLayout);
         } else {
           console.log('It is off!');
           angular.element(elem).removeClass(attrs.offIcon);
           angular.element(elem).addClass(attrs.onIcon);
-          //
-          // angular.element(elem).removeClass(attrs.offLayout);
-          // angular.element(elem).addClass(attrs.onLayout);
         }
-
         currentState = !currentState
-
       });
-
-
     }
   };
 });
