@@ -9961,8 +9961,12 @@ a.button {
 .has-tabs {
   bottom: 60px; }
 
+/* platform design */
 .platform-ios .has-header {
   top: 100px; }
+
+.platform-ios .back-button {
+  height: 40px; }
 
 .platform-ios .bar.bar-stable {
   height: 100px; }

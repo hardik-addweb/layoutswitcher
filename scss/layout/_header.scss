@@ -113,9 +113,13 @@
 .has-tabs {
   bottom: 60px;
 }
+/* platform design */
 .platform-ios {
   .has-header {
     top: 100px;
+  }
+  .back-button {
+    height: 40px;
   }
   .bar.bar-stable {
     height: 100px;
