@@ -9,7 +9,7 @@
   clear: both;
   display: inline-block;
   width: 100%;
-  height: 150px;
+  height: 60px;
   @include background-horizontal($dark-blue, $light-green, $dark-blue);
   .title {
     height: 60px;
@@ -108,8 +108,25 @@
   }
 }
 .has-header {
-  top: 150px;
+  top: 60px;
 }
 .has-tabs {
   bottom: 60px;
+}
+.platform-ios {
+  .has-header {
+    top: 100px;
+  }
+  .bar.bar-stable {
+    height: 100px;
+    .title {
+      height: 50px;
+      line-height: 50px;
+    }
+    .buttons-right {
+      .icon {
+        margin: 0 10px 0 0;
+      }
+    }
+  }
 }
