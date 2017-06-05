@@ -9836,8 +9836,33 @@ a.button {
  * All variables used in SCSS are defined in this file.
  */
 /* Colors */
-/*
- * Header Design SCSS
+/**
+ * @file
+ * SCSS file to generate CSS.
+ *
+ * Button SCSS
+ */
+.btn {
+  display: inline-block;
+  width: auto;
+  padding: 3px 10px;
+  border: none;
+  color: #fff !important;
+  font-size: 16px;
+  opacity: 1 !important;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background: #4081BF;
+  background: -webkit-linear-gradient(left, #4081BF 0%, #40A6BF 50%, #4081BF 100%);
+  background: -moz-linear-gradient(left, #4081BF 0%, #40A6BF 50%, #4081BF 100%);
+  background: linear-gradient(to right, #4081BF 0%, #40A6BF 50%, #4081BF 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$left', endColorstr='$right',GradientType=0); }
+
+/**
+ * @file
+ * SCSS file to generate CSS.
+ *
+ * Header page SCSS
  */
 .bar.bar-stable {
   height: 60px;
@@ -9933,8 +9958,11 @@ a.button {
 .has-tabs {
   bottom: 60px; }
 
-/*
- * - Chat list page SCSS
+/**
+ * @file
+ * SCSS file to generate CSS.
+ *
+ * Chat list page SCSS
  */
 /**
  * Grid view
@@ -9958,6 +9986,7 @@ a.button {
   padding: 20px 15px 20px 125px;
   border-top: none;
   border-right: none;
+  border-bottom: 3px solid #fff;
   border-left: none;
   background-color: #1B3255;
   color: #fff; }
@@ -9975,30 +10004,21 @@ a.button {
     margin-bottom: 5px;
     color: #fff; }
   .chat-list-wrap .item h2 {
-    font-size: 20px;
-    font-weight: normal; }
+    font-size: 18px;
+    font-weight: bold; }
   .chat-list-wrap .item p {
-    font-size: 16px; }
-  .chat-list-wrap .item .button {
-    margin-top: 10px;
-    padding: 5px 15px;
-    color: #fff;
-    font-size: 16px;
-    opacity: 1;
-    -webkit-border-radius: 30px;
-    border-radius: 30px;
-    background: #4081BF;
-    background: -webkit-linear-gradient(left, #4081BF 0%, #40A6BF 50%, #4081BF 100%);
-    background: -moz-linear-gradient(left, #4081BF 0%, #40A6BF 50%, #4081BF 100%);
-    background: linear-gradient(to right, #4081BF 0%, #40A6BF 50%, #4081BF 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$left', endColorstr='$right',GradientType=0); }
+    font-size: 14px; }
+  .chat-list-wrap .item .btn {
+    /*margin-top: 10px;*/ }
 
 .chat-list-wrap.grid .item {
   padding: 30px 15px;
-  border: 1px solid #DDD;
+  border: 3px solid #fff;
   border-left: none;
   border-bottom: none;
   text-align: center; }
+  .chat-list-wrap.grid .item:nth-child(2n) {
+    border-right: 0; }
   .chat-list-wrap.grid .item img {
     top: 0; }
 
@@ -10026,6 +10046,8 @@ ion-tabs .tab-nav {
   .details-page .user-img {
     float: left;
     width: 100%; }
+    .details-page .user-img img {
+      max-width: 100%; }
   .details-page .product-details {
     display: inline-block;
     width: 100%;
