@@ -32,7 +32,7 @@
     padding: 20px 15px 20px 125px;
     border-top: none;
     border-right: none;
-    border-bottom: 3px solid $light;
+    border-bottom: 2px solid $light;
     border-left: none;
     background-color: $dark-blue;
     color: $light;
@@ -104,8 +104,12 @@ ion-tabs {
   .user-img {
     float: left;
     width: 100%;
+    text-align: center;
     img {
       max-width: 100%;
+      @media (max-width: 480px) {
+        width: 100%;
+      }
     }
   }
   .product-details {
