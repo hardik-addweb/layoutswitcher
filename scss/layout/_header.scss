@@ -6,6 +6,9 @@
  */
 
 .bar.bar-stable {
+  clear: both;
+  display: inline-block;
+  width: 100%;
   height: 76px;
   @include background-horizontal($dark-blue, $light-green, $dark-blue);
   .title {
@@ -47,10 +50,10 @@
       }
       .icon-bar {
         position: relative;
-        float: left;
+        /*float: left;*/
         height: 4px;
-        width: 100%;
-        margin: 0 0 7px;
+        width: 35px;
+        margin: 0 auto 7px;
         background: $light;
         @inlclude transition(all .15s ease 0s);
         &:before,
@@ -72,9 +75,9 @@
     }
 
     .grid-icon {
-      width: 8px;
-      margin-right: 25px;
+      /*margin-right: 25px;*/
       .icon-bar {
+        width: 8px;
         &:before,
         &:after {
           margin: 0 -5px;

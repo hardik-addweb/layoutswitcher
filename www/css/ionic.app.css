@@ -9865,6 +9865,9 @@ a.button {
  * Header page SCSS
  */
 .bar.bar-stable {
+  clear: both;
+  display: inline-block;
+  width: 100%;
   height: 76px;
   background: #1B3255;
   background: -webkit-linear-gradient(left, #1B3255 0%, #40A6BF 50%, #1B3255 100%);
@@ -9907,10 +9910,10 @@ a.button {
         display: none; }
       .bar.bar-stable .buttons-right .icon .icon-bar {
         position: relative;
-        float: left;
+        /*float: left;*/
         height: 4px;
-        width: 100%;
-        margin: 0 0 7px;
+        width: 35px;
+        margin: 0 auto 7px;
         background: #fff;
         @inlclude transition(all .15s ease 0s); }
         .bar.bar-stable .buttons-right .icon .icon-bar:before, .bar.bar-stable .buttons-right .icon .icon-bar:after {
@@ -9926,19 +9929,20 @@ a.button {
         .bar.bar-stable .buttons-right .icon .icon-bar:last-child {
           margin-bottom: 0; }
     .bar.bar-stable .buttons-right .grid-icon {
-      width: 8px;
-      margin-right: 25px; }
-      .bar.bar-stable .buttons-right .grid-icon .icon-bar:before, .bar.bar-stable .buttons-right .grid-icon .icon-bar:after {
-        margin: 0 -5px;
-        opacity: 1; }
-      .bar.bar-stable .buttons-right .grid-icon .icon-bar:before {
-        left: 0;
-        -webkit-transform: translateX(-8px);
-        transform: translateX(-8px); }
-      .bar.bar-stable .buttons-right .grid-icon .icon-bar:after {
-        right: 0;
-        -webkit-transform: translateX(8px);
-        transform: translateX(8px); }
+      /*margin-right: 25px;*/ }
+      .bar.bar-stable .buttons-right .grid-icon .icon-bar {
+        width: 8px; }
+        .bar.bar-stable .buttons-right .grid-icon .icon-bar:before, .bar.bar-stable .buttons-right .grid-icon .icon-bar:after {
+          margin: 0 -5px;
+          opacity: 1; }
+        .bar.bar-stable .buttons-right .grid-icon .icon-bar:before {
+          left: 0;
+          -webkit-transform: translateX(-8px);
+          transform: translateX(-8px); }
+        .bar.bar-stable .buttons-right .grid-icon .icon-bar:after {
+          right: 0;
+          -webkit-transform: translateX(8px);
+          transform: translateX(8px); }
 
 .back-button {
   max-height: 60px;
