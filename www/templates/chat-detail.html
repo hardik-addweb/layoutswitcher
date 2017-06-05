@@ -5,16 +5,20 @@
   The Friends service returns an array of friend data
 -->
 <ion-view view-title="{{chat.name}}">
-  <ion-content class="padding">
-    <img ng-src="{{chat.face}}" style="width: 64px; height: 64px">
-    <p>
-      {{chat.lastText}}
-    </p>
-    <p>
-      {{chat.price}}
-    </p>
-    <p>
-      {{chat.discout}}
-    </p>
+  <ion-content class="details-page">
+    <div class="user-img">
+      <img ng-src="{{chat.face}}" alt="user" />
+    </div>
+    <div class="product-details">
+      <div class="product-info">
+        {{chat.lastText}}
+      </div>
+      <div class="product-price">
+        Rs. {{chat.price}}
+      </div>
+      <div class="button button-small button-outline button-dark disable">
+        {{chat.discout}} Off
+      </div>
+    </div>
   </ion-content>
 </ion-view>

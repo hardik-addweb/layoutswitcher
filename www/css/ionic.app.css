@@ -9937,8 +9937,8 @@ a.button {
  * - Chat list page SCSS
  */
 /**
-* Grid view
-*/
+ * Grid view
+ */
 .grid {
   display: inline-block;
   width: 100%; }
@@ -10016,3 +10016,17 @@ ion-tabs .tab-nav {
     ion-tabs .tab-nav a .tab-title {
       font-size: 14px;
       line-height: 22px; }
+
+/**
+ * Details page
+ */
+.details-page {
+  display: inline-block;
+  width: 100%; }
+  .details-page .user-img {
+    float: left;
+    width: 100%; }
+  .details-page .product-details {
+    display: inline-block;
+    width: 100%;
+    text-align: center; }

@@ -2,9 +2,10 @@
  * - Chat list page SCSS
  */
 
+
 /**
-* Grid view
-*/
+ * Grid view
+ */
 .grid {
   display: inline-block;
   width: 100%;
@@ -93,4 +94,30 @@ ion-tabs {
     }
   }
 }
+
+
+/**
+ * Details page
+ */
+.details-page {
+  display: inline-block;
+  width: 100%;
+  .user-img {
+    float: left;
+    width: 100%;
+  }
+  .product-details {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
 
