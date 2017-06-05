@@ -6,7 +6,7 @@
  */
 
 .bar.bar-stable {
-  height: 60px;
+  height: 76px;
   @include background-horizontal($dark-blue, $light-green, $dark-blue);
   .title {
     height: 60px;
@@ -105,7 +105,7 @@
   }
 }
 .has-header {
-  top: 60px;
+  top: 76px;
 }
 .has-tabs {
   bottom: 60px;

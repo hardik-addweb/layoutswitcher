@@ -9865,7 +9865,7 @@ a.button {
  * Header page SCSS
  */
 .bar.bar-stable {
-  height: 60px;
+  height: 76px;
   background: #1B3255;
   background: -webkit-linear-gradient(left, #1B3255 0%, #40A6BF 50%, #1B3255 100%);
   background: -moz-linear-gradient(left, #1B3255 0%, #40A6BF 50%, #1B3255 100%);
@@ -9952,7 +9952,7 @@ a.button {
       color: #fff; }
 
 .has-header {
-  top: 60px; }
+  top: 76px; }
 
 .has-tabs {
   bottom: 60px; }
